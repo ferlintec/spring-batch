@@ -47,7 +47,9 @@ public class ParImparBatchConfig {
 	public Step imprimeParImparStep() {
 		 return stepBuilderFactory
 				 	.get("imprimeParImparStep")
-				 	.<Integer, String>chunk(1)
+				 	.<Integer, String>chunk(3) //O parâmetro indica o número de operações para que o processo faça o commit e feche 1 transação.
+				 								//Isso deve ser considerado para o desempenho, pois tem um custo para se criar cada nova transação
+				 								//dentro do chunk.
 				 	.reader(contaAteDezReader())
 				 	.processor(parOuImparProcessor())
 				 	.writer(imprimeWriter())

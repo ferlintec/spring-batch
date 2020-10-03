@@ -1,4 +1,4 @@
-package com.ferlin.springbatch;
+package com.udemy.configuracaojob;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -16,46 +16,33 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@EnableBatchProcessing
 @Configuration
-public class BatchConfig {
-	
-	
+@EnableBatchProcessing
+public class ConfiguracaoJobConfig {
 	@Autowired
 	private JobBuilderFactory jobBuilderFactory;
-	
 	@Autowired
 	private StepBuilderFactory stepBuilderFactory;
-	
-	
+
 	@Bean
-	public Job imprimeOlaMundo() {
-	
-		return jobBuilderFactory
-				.get("imprimeOlaMundo")
-				.start(imprimeOlaMundoStep())
-				.incrementer(new RunIdIncrementer())
+	public Job imprimeOlaJob() {
+		return jobBuilderFactory.get("imprimeOlaJob").start(imprimeOlaStep(null)).incrementer(new RunIdIncrementer())
 				.build();
 	}
-
-	public Step imprimeOlaMundoStep() {
-		 return stepBuilderFactory.get("imprimeOlaMundoStep")
-				 			.tasklet(imprimeOlaTasklet(null, null))
-				 			.build();
+	
+	
+	public Step imprimeOlaStep( String nome) {
+		return stepBuilderFactory.get("imprimeOlaStep").tasklet(imprimeOlaTasklet(nome)).build();
 	}
 
-	@Bean
 	@StepScope
-	public Tasklet imprimeOlaTasklet(@Value("#{jobParameters['nome']}") String nome,
-			@Value("#{jobParameters['casa']}") String casa) {
+	@Bean
+	public Tasklet imprimeOlaTasklet(@Value("#{jobParameters['nome']}") String nome) {
 		return new Tasklet() {
-			
+
 			@Override
 			public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-				System.out.println("############## INICIO step    ########################");
-				System.out.println(String.format("STEP Olá Mundo: %s!!", nome));
-				System.out.println(String.format("CASA: %s!!", casa));
-				System.out.println("############## FIM step    ########################");
+				System.out.println(String.format("Olá, %s!", nome));
 				return RepeatStatus.FINISHED;
 			}
 		};

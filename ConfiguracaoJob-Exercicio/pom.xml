@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.4.RELEASE</version>
+		<version>2.2.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ferlin</groupId>
-	<artifactId>project-spring-batch-par-impar</artifactId>
+	<groupId>com.udemy</groupId>
+	<artifactId>ConfiguracaoJob-Exercicio</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>project-spring-batch-par-impar</name>
-	<description>Demo project for Spring Boot</description>
+	<name>ConfiguracaoJob-Exercicio</name>
+	<description>Configuração do Job</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -44,11 +44,6 @@
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
