@@ -1,0 +1,26 @@
+2020-10-04 10:01:12,563 INFO c.f.s.ProjectSpringBatchParImparApplication [main] Starting ProjectSpringBatchParImparApplication on UDI-95MNN33 with PID 28300 (C:\test\git\spring-batch\project-spring-batch-par-impar\target\classes started by adferlin in C:\test\git\spring-batch\project-spring-batch-par-impar)
+2020-10-04 10:01:12,568 INFO c.f.s.ProjectSpringBatchParImparApplication [main] No active profile set, falling back to default profiles: default
+2020-10-04 10:01:13,546 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-10-04 10:01:13,784 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-10-04 10:01:13,895 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: H2
+2020-10-04 10:01:14,073 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2020-10-04 10:01:14,197 INFO c.f.s.ProjectSpringBatchParImparApplication [main] Started ProjectSpringBatchParImparApplication in 2.183 seconds (JVM running for 2.788)
+2020-10-04 10:01:14,286 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImpar]] launched with the following parameters: [{run.id=1, nome=Adriano!, casa=NOVA}]
+2020-10-04 10:01:14,324 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeParImparStep]
+2020-10-04 10:01:14,353 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeParImparStep] executed in 28ms
+2020-10-04 10:01:14,356 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImpar]] completed with the following parameters: [{run.id=1, nome=Adriano!, casa=NOVA}] and the following status: [COMPLETED] in 46ms
+2020-10-04 10:01:14,359 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-10-04 10:01:14,361 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-10-04 10:01:50,842 INFO c.f.s.ProjectSpringBatchParImparApplication [main] Starting ProjectSpringBatchParImparApplication on UDI-95MNN33 with PID 30508 (C:\test\git\spring-batch\project-spring-batch-par-impar\target\classes started by adferlin in C:\test\git\spring-batch\project-spring-batch-par-impar)
+2020-10-04 10:01:50,847 INFO c.f.s.ProjectSpringBatchParImparApplication [main] No active profile set, falling back to default profiles: default
+2020-10-04 10:01:51,813 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-10-04 10:01:51,998 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-10-04 10:01:52,094 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: H2
+2020-10-04 10:01:52,278 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2020-10-04 10:01:52,411 INFO c.f.s.ProjectSpringBatchParImparApplication [main] Started ProjectSpringBatchParImparApplication in 2.11 seconds (JVM running for 2.732)
+2020-10-04 10:01:52,480 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImpar]] launched with the following parameters: [{run.id=1, nome=Adriano!, casa=NOVA}]
+2020-10-04 10:01:52,510 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeParImparStep]
+2020-10-04 10:01:52,535 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeParImparStep] executed in 23ms
+2020-10-04 10:01:52,538 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImpar]] completed with the following parameters: [{run.id=1, nome=Adriano!, casa=NOVA}] and the following status: [COMPLETED] in 40ms
+2020-10-04 10:01:52,541 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-10-04 10:01:52,545 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.

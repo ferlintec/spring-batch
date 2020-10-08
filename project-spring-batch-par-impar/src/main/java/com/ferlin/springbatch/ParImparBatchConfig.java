@@ -73,20 +73,20 @@ public class ParImparBatchConfig {
 
 
 
-	@Bean
-	@StepScope
-	public Tasklet imprimeParImparasklet(@Value("#{jobParameters['nome']}") String nome) {
-		return new Tasklet() {
-			
-			@Override
-			public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-				System.out.println("############## INICIO step    ########################");
-				System.out.println(String.format("STEP Par Impar: %s!!", nome));
-				System.out.println("############## FIM step    ########################");
-				return RepeatStatus.FINISHED;
-			}
-		};
-	}
+//	@Bean
+//	@StepScope
+//	public Tasklet imprimeParImparasklet(@Value("#{jobParameters['nome']}") String nome) {
+//		return new Tasklet() {
+//			
+//			@Override
+//			public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+//				System.out.println("############## INICIO step    ########################");
+//				System.out.println(String.format("STEP Par Impar: %s!!", nome));
+//				System.out.println("############## FIM step    ########################");
+//				return RepeatStatus.FINISHED;
+//			}
+//		};
+//	}
 	
 	
 }
