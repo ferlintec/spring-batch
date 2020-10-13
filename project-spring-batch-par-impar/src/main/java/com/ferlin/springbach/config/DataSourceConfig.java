@@ -22,6 +22,11 @@ public class DataSourceConfig {
 	@ConfigurationProperties(prefix="spring.datasource")
 	@Bean
 	public DataSource springDataSource() {
+		
+		System.out.println("#####################");
+		System.out.println("#### DataSourceConfig #################");
+		
+		
 		return DataSourceBuilder.create().build();
 	}
 	
@@ -29,6 +34,10 @@ public class DataSourceConfig {
 	@ConfigurationProperties(prefix="app.datasource")
 	@Bean
 	public DataSource appDataSource() {
+		
+		System.out.println("#####################");
+		System.out.println("#### DataSourceConfig #################");
+		
 		return DataSourceBuilder.create().build();
 	}
 	

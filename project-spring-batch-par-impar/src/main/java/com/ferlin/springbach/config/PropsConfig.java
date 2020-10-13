@@ -23,6 +23,10 @@ public class PropsConfig {
 	 */
 	@Bean
 	public PropertySourcesPlaceholderConfigurer config() {
+		
+		System.out.println("#####################");
+		System.out.println("#### PropertySourcesPlaceholderConfigurer #################");
+		
 		PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer ();
 		
 		FileSystemResource f = new FileSystemResource("C:/test/git/spring-batch/config/project-spring-batch-par-impar/application.properties");
